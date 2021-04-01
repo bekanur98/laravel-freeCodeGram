@@ -4,6 +4,10 @@ module.exports = {
     './resources/css/**/*.css',
   ],
   theme: {
+      container:{
+        center: true,
+        width: 736
+      },
     extend: {}
   },
   variants: {},
