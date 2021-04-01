@@ -37,7 +37,7 @@
                             <a class="no-underline hover:underline" href="{{ route('register') }}">{{ __('Register') }}</a>
                         @endif
                     @else
-                        <span>{{ Auth::user()->name }}</span>
+                        <span>{{ Auth::user()->username }}</span>
 
                         <a href="{{ route('logout') }}"
                            class="no-underline hover:underline"
