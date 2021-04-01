@@ -60,3 +60,19 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Deploy
+
+For deploying freeCodeGram Laravel app's you first need install [Composer - A Dependency Manager for PHP](https://getcomposer.org/download/), and also [npm - Node Package Manager](https://nodejs.org/en/)
+
+###1. After installation
+
+After installation, to quickly run freeCodeGram app, run the following script in your terminal
+
+`composer install` - install all need php packages 
+
+`npm install` - install all nodejs packages
+
+`npm run [dev][prod]` - compile nodejs packages what we will use
+
+`php artisan serve` - run app
