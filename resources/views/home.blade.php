@@ -11,15 +11,15 @@
             </div>
         </div>
         <div class="col-span-2 pt-5">
-            <div><h1 class="text-2xl"><strong>freeCodeCamp</strong></h1></div>
+            <div><h1 class="text-2xl"><strong>{{ $user->username }}</strong></h1></div>
             <div class="flex flex-wrap pt-1">
                 <div class="pr-5"><strong>153</strong> posts</div>
                 <div class="pr-5"><strong>23k</strong> followers</div>
                 <div class="pr-5"><strong>212</strong> following</div>
             </div>
-            <div class="pt-4"><b>freeCodeCamp.org</b></div>
-            <div class="pt-2">We're a global community of millions of people learning to code together. We're an open source, donor-supported, 501(c)(3) nonprofit.</div>
-            <div class=" pt-2"><a class="text-blue-500" href="#">www.freecodecamp.org</a></div>
+            <div class="pt-4"><b>{{ $user->profile->title }}</b></div>
+            <div class="pt-2">{{ $user->profile->description }}</div>
+            <div class=" pt-2"><a class="text-blue-500" href="#">{{ $user->profile->url}}</a></div>
         </div>
     </div>
 
