@@ -75,4 +75,6 @@ After installation, to quickly run freeCodeGram app, run the following script in
 
 `npm run [dev][prod]` - compile nodejs packages what we will use
 
+`php artisan db:create` - create database
+
 `php artisan serve` - run app
