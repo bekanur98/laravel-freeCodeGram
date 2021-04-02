@@ -17,7 +17,7 @@
                             {{ $user->username }}
                         </strong>
                     </h1>
-                    <a class="text-blue-500" href="#">Add new post</a>
+                    <a class="text-blue-500" href="/p/create">Add new post</a>
                 </div>
                 <div class="flex flex-wrap pt-1">
                     <div class="pr-5"><strong>153</strong> posts</div>
@@ -36,18 +36,11 @@
 
         {{--    post div--}}
         <div class="grid grid-cols-3 pt-8">
-            <div class="p-2">
-                <img src="https://www.alishaaneja.com/assets/codecamp/1.jpg" class="w-100">
-            </div>
-            <div class="p-2">
-                <img src="https://www.weekendnotes.com/im/003/06/380262538590308943030512925739891062996992o1.jpg"
-                     class="w-100">
-            </div>
-            <div class="p-2">
-                <img
-                    src="https://muellerconnect.com/wp-content/uploads/2018/08/MCONN_1200x800_CodeCamp2018_thumbnail.jpg"
-                    class="w-100">
-            </div>
+            @foreach($user->posts as $post)
+                <div class="p-2">
+                    <img src="/storage/{{$post->image}}" class="w-100">
+                </div>
+            @endforeach
         </div>
     </main>
 @endsection
