@@ -18,7 +18,7 @@
 <body class="bg-gray-100 h-screen antialiased leading-none font-sans">
     <div id="app">
         <header class="bg-white py-6 border">
-            <div class="container mx-auto flex justify-between items-center mx-5 px-64">
+            <div class=" mx-auto flex justify-between items-center mx-5 px-64">
                 <div>
                     <a href="{{ url('/') }}" class="flex navbar-brand text-lg font-semibold text-black-50 no-underline">
                         <div>
