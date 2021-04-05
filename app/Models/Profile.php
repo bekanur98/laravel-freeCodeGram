@@ -17,6 +17,11 @@ class Profile extends Model
 //        'url',
 //        'image'
 //    ];
+    public function profileImage()
+    {
+        return ($this->image) ? '/storage/' . $this->image : 'https://www.kindpng.com/picc/m/21-214439_free-high-quality-person-icon-default-profile-picture.png';
+    }
+
 
     public function user()
     {

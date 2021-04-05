@@ -5,8 +5,8 @@
         <div class="grid grid-cols-3">
             <div class="col-span-1 p-5">
                 <div class="">
-                    <img src="/storage/{{ $user->profile->image }}"
-                         alt="" class="rounded-full" style="width: 120px; height: 120px"
+                    <img src="{{ $user->profile->profileImage() }}"
+                         alt="" class="rounded-full h-28"
                     >
                 </div>
             </div>
