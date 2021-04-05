@@ -12,11 +12,15 @@
             </div>
             <div class="col-span-2 pt-5">
                 <div class="flex flex-wrap justify-between items-baseline">
-                    <h1 class="text-2xl">
-                        <strong>
-                            {{ $user->username }}
-                        </strong>
-                    </h1>
+                    <div class="flex flex-wrap items-center pb-3">
+                        <h1 class="text-2xl">
+                            <strong>
+                                {{ $user->username }}
+                            </strong>
+                        </h1>
+                        <follow-button user-id="{{ $user->id }}" follows="{{ $follows }}"></follow-button>
+                    </div>
+
                     @can('update', $user->profile)
                         <a class="text-blue-500" href="/p/create">Add new post</a>
                     @endcan

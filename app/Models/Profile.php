@@ -22,6 +22,10 @@ class Profile extends Model
         return ($this->image) ? '/storage/' . $this->image : 'https://www.kindpng.com/picc/m/21-214439_free-high-quality-person-icon-default-profile-picture.png';
     }
 
+    public function followers()
+    {
+        return $this->belongsToMany(User::class);
+    }
 
     public function user()
     {

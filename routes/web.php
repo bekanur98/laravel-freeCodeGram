@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FollowsController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ProfilesController;
 use Illuminate\Support\Facades\Auth;
@@ -21,6 +22,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Auth::routes();
+
+Route::post('/follow/{user}', [FollowsController::class, 'store']);
 
 Route::get('/p/create', [PostsController::class, 'create']);
 Route::post('/p', [PostsController::class, 'store']);
