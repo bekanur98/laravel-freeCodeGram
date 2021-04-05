@@ -20,6 +20,10 @@ use App\Http\Controllers\HomeController;
 
 Auth::routes();
 
+Route::get('/email', function () {
+    return new \App\Mail\NewUserWelcomeMail();
+});
+
 Route::post('/follow/{user}', [FollowsController::class, 'store']);
 
 Route::get('/', [PostsController::class, 'index']);
