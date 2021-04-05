@@ -35,8 +35,8 @@
 
                 <div class="flex flex-wrap pt-1">
                     <div class="pr-5"><strong>{{ $user->posts->count() }}</strong> posts</div>
-                    <div class="pr-5"><strong>23k</strong> followers</div>
-                    <div class="pr-5"><strong>212</strong> following</div>
+                    <div class="pr-5"><strong>{{ $user->profile->followers->count() }}</strong> followers</div>
+                    <div class="pr-5"><strong>{{ $user->following->count() }}</strong> following</div>
                 </div>
                 <div class="pt-4"><b>{{ $user->profile->title }}</b></div>
                 <div class="pt-2">{{ $user->profile->description }}</div>
