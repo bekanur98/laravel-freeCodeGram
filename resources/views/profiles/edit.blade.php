@@ -2,7 +2,7 @@
 
 @section('content')
     <main class="sm:container sm:mx-auto sm:mt-10 px-64">
-        <form action="/profile/{{ $user->id }}" enctype="mucltipart/form-data" method="post">
+        <form action="/profile/{{ $user->id }}" enctype="multipart/form-data" method="post">
             @csrf
             @method('PATCH')
 

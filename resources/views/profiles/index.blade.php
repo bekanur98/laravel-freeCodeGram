@@ -5,7 +5,7 @@
         <div class="grid grid-cols-3">
             <div class="col-span-1 p-5">
                 <div class="">
-                    <img src="https://pbs.twimg.com/profile_images/1276770212927410176/qTgTIejk_400x400.jpg"
+                    <img src="/storage/{{ $user->profile->image }}"
                          alt="" class="rounded-full" style="width: 120px; height: 120px"
                     >
                 </div>
